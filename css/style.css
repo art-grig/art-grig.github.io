@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=cyrillic,cyrillic-ext");
+html {
+  font-size: 10px; }
+
+body {
+  font-family: "Roboto"; }
+
+.k {
+  font-style: italic; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+header {
+  font-size: 1.6rem;
+  min-height: 120px;
+  border-bottom: 1px solid #878787;
+  padding-top: 5px;
+  background-color: #F1F1F1; }
+  header .logo-block {
+    margin-bottom: 10px; }
+    header .logo-block img {
+      width: 50%; }
+    header .logo-block div {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #22A7DF;
+      margin: 0;
+      text-decoration: none;
+      padding: 0; }
+  header .links {
+    height: 100%; }
+    header .links a {
+      margin-top: 100px;
+      margin-left: 30px; }
+  header .obrs {
+    padding-right: 10px; }
+    header .obrs a {
+      text-decoration: none;
+      color: rgba(34, 167, 223, 0.8);
+      font-weight: 500;
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 2rem; }
+      header .obrs a:hover {
+        text-decoration: none;
+        color: #22A7DF; }
+      header .obrs a i {
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 2.5rem; }
+      header .obrs a span {
+        color: #665CAC;
+        font-weight: 900; }
+
+.navs_header {
+  background-color: #F4F3F3;
+  font-size: 1.8rem;
+  border-bottom: 1px solid #878787; }
+  .navs_header .link_block {
+    padding-bottom: 10px;
+    text-align: center; }
+    .navs_header .link_block a {
+      margin-top: 10px;
+      color: #464646;
+      opacity: 0.8;
+      margin-right: 2rem;
+      position: relative;
+      transition: all 0.5s;
+      text-align: center; }
+      .navs_header .link_block a::after {
+        display: block;
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: #22A7DF;
+        transform: translateY(8px) scale(0);
+        transition: all 0.2s; }
+      .navs_header .link_block a:hover {
+        opacity: 1;
+        transition: all 0.5s; }
+        .navs_header .link_block a:hover::after {
+          transform: translateY(8px) scale(1); }
+
+.slide_wrap {
+  background: url("../img/fon.jpg") center no-repeat;
+  background-size: cover; }
+  .slide_wrap .carousel-control-prev {
+    right: 4%; }
+  .slide_wrap .carousel-control-next {
+    right: 2%; }
+  .slide_wrap .carousel-control-prev, .slide_wrap .carousel-control-next {
+    top: 20px;
+    width: 30px; }
+  .slide_wrap_mask {
+    background-color: rgba(0, 0, 0, 0.4);
+    min-height: 500px; }
+    .slide_wrap_mask .my_slide {
+      min-height: 500px;
+      height: 90vh; }
+      .slide_wrap_mask .my_slide .slide_content {
+        font-size: 1.6rem;
+        color: #fff;
+        text-align: center; }
+        .slide_wrap_mask .my_slide .slide_content h1, .slide_wrap_mask .my_slide .slide_content h2, .slide_wrap_mask .my_slide .slide_content h3 {
+          margin-top: 20px;
+          text-align: center;
+          color: #fff; }

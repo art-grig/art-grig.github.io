@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=cyrillic,cyrillic-ext')
+@import "color"
+html
+	font-size: 10px
+body
+	font-family: 'Roboto'
+
+
+.k
+	font-style: italic
+a
+	text-decoration: none
+	&:hover
+		text-decoration: none
+
+
+header
+	font-size: 1.6rem	
+	min-height: 120px
+	border-bottom: 1px solid $grey
+	padding-top: 5px
+	background-color: #F1F1F1
+	.logo-block
+		margin-bottom: 10px
+		img
+			width: 50%
+		div
+			font-size: 1.2rem	
+			font-style: italic
+			color: $blue
+			margin: 0
+			text-decoration: none
+			padding: 0
+	.links
+		height: 100%
+		a
+			margin-top: 100px
+			margin-left: 30px
+
+	.obrs
+		padding-right: 10px
+		a
+			text-decoration: none
+			color: rgba($blue, 0.8)
+			font-weight: 500
+			display: inline-block
+			margin-top: 10px
+			font-size: 2rem
+			&:hover
+				text-decoration: none
+				color: $blue
+			i
+				font-size: 2.5rem
+				font-weight: 700
+				line-height: 2.5rem
+			span
+				color: #665CAC
+				font-weight: 900
+
+
+.navs_header
+	background-color: #F4F3F3
+	font-size: 1.8rem
+	border-bottom: 1px solid $grey
+	.link_block
+		padding-bottom: 10px
+		text-align: center
+		
+		a
+			margin-top: 10px
+			color: $black
+			opacity: 0.8
+			margin-right: 2rem
+			position: relative
+			transition: all 0.5s
+			text-align: center
+			
+
+			&::after
+				display: block
+				content: ''
+				width: 100%
+				height: 2px
+				background-color: $blue
+				transform: translateY(8px) scale(0)
+				transition: all 0.2s
+			&:hover
+				opacity: 1
+				transition: all 0.5s
+				&::after
+					transform: translateY(8px) scale(1)
+.slide_wrap
+	background: url('../img/fon.jpg') center no-repeat 
+	background-size: cover
+	.carousel-control-prev 
+		right: 4%
+	.carousel-control-next
+		right: 2%   	
+	.carousel-control-prev,.carousel-control-next
+		top: 20px
+		width: 30px
+
+	&_mask
+		background-color: rgba(0, 0, 0, 0.4)
+		min-height: 500px
+
+		.my_slide
+			min-height: 500px
+			height: 90vh
+
+			.slide_content
+				font-size: 1.6rem
+				color: #fff
+				text-align: center
+				h1, h2, h3
+					margin-top: 20px
+					text-align: center
+					color: #fff
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
